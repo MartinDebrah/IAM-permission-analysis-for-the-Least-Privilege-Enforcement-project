@@ -29,7 +29,7 @@ Over-permissioned IAM users and roles are a leading cause of lateral movement in
 
 ## 📸 Screenshot
 
-![IAM Least Privilege Overview](IAM_Least_Privilege_Screenshot.png)
+---![IAM_Least_Privilege_Screenshot](https://github.com/user-attachments/assets/20f8006c-ef17-4e47-bb93-c3096fe54ee8)
 
 ---
 
@@ -40,29 +40,6 @@ Over-permissioned IAM users and roles are a leading cause of lateral movement in
 | Bob      | 50                  | 10               | 80%                  | ✅ High Risk |
 | Charlie  | 80                  | 30               | 62.5%                | ⚠️ Moderate Risk |
 
----
-
-## 🛠️ Setup Instructions
-1. **Clone the repo**:
-   ```bash
-   git clone https://github.com/yourusername/IAM-Least-Privilege-Enforcement.git
-   cd IAM-Least-Privilege-Enforcement
-   ```
-
-2. **Install dependencies**:
-   ```bash
-   pip install boto3 pandas matplotlib streamlit
-   ```
-
-3. **Run script in command line mode**:
-   ```bash
-   python iam_least_privilege.py
-   ```
-
-4. **OR launch the Streamlit dashboard**:
-   ```bash
-   streamlit run iam_least_privilege.py
-   ```
 
 ---
 
@@ -88,9 +65,6 @@ Over-permissioned IAM users and roles are a leading cause of lateral movement in
 - [CIS AWS Benchmark](https://www.cisecurity.org/benchmark/amazon_web_services)
 - [NIST CSF](https://www.nist.gov/cyberframework)
 
----
 
-## 💡 Future Enhancements
-- Integrate alerting with AWS SNS or Slack.
-- Support for Azure and GCP IAM.
-- Remediation-as-Code (auto-remove unused permissions).
+
+
