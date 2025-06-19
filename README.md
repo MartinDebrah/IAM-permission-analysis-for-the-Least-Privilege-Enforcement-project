@@ -1,16 +1,16 @@
 # IAM Least Privilege Enforcement
 
-## 🎯 Objective
+## Objective
 To automate the detection of over-permissioned IAM identities in AWS by comparing the permissions granted versus those actually used. This project enforces the Principle of Least Privilege and supports cloud security audits aligned with NIST CSF and CIS benchmarks.
 
 ---
 
-## 📚 Background
+##  Background
 Over-permissioned IAM users and roles are a leading cause of lateral movement in cloud breaches. Many accounts have broad permissions they never use, increasing the attack surface. This tool identifies and flags such risks, allowing security teams to take preventive action.
 
 ---
 
-## 🧰 Tools & Technologies Used
+##  Tools & Technologies Used
 - **AWS CLI / Boto3 (Python SDK)** – Access AWS IAM data programmatically.
 - **IAM Access Analyzer** – Review permissions granted and detect unused ones.
 - **Python (Pandas, Boto3, Matplotlib)** – Data analysis and visualization.
@@ -18,7 +18,7 @@ Over-permissioned IAM users and roles are a leading cause of lateral movement in
 
 ---
 
-## 🏗️ Architecture
+##  Architecture
 1. Extract IAM user and role policies using AWS CLI/Boto3.
 2. Use Access Analyzer or CloudTrail logs to evaluate actual service usage.
 3. Compare permissions granted vs used.
@@ -33,7 +33,7 @@ Over-permissioned IAM users and roles are a leading cause of lateral movement in
 
 ---
 
-## 🧪 Sample Findings
+##  Sample Findings
 | IAM User | Permissions Granted | Permissions Used | Over-Permission (%) | Action Needed |
 |----------|---------------------|------------------|----------------------|----------------|
 | Alice    | 20                  | 5                | 75%                  | ✅ Review & Remove |
@@ -43,7 +43,7 @@ Over-permissioned IAM users and roles are a leading cause of lateral movement in
 
 ---
 
-## 🧠 Skills Learned
+##  Skills Learned
 - Cloud security principles (Least Privilege, Identity Hardening)
 - AWS IAM and Access Analyzer
 - Python scripting with AWS APIs
@@ -52,7 +52,7 @@ Over-permissioned IAM users and roles are a leading cause of lateral movement in
 
 ---
 
-## 📌 Compliance Standards Referenced
+##  Compliance Standards Referenced
 - **NIST 800-53**: AC-6 Least Privilege
 - **NIST Cybersecurity Framework** (Identify/Protect)
 - **CIS AWS Foundations Benchmark v1.4**
